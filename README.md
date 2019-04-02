@@ -1,10 +1,10 @@
 # Ferret: A fuzzer for the ciaoengine binary
 
-The [Ciao](https://ciao-lang.org) programming language has a virtual machine under the hood that in made in C. This fuzzer mutates a seed with radamsa and sends the samples as Ciao bytecode.
+The [Ciao](https://ciao-lang.org) programming language has a virtual machine under the hood that is made in C. This fuzzer mutates a seed with radamsa and sends the samples as Ciao bytecode.
 
 ## Requirements
 
-This fuzzer requires a working instalation of Ciao prolog and it's recomended to have one with some kind of instrumentation for detecting subtle bugs.
+This fuzzer requires a working instalation of Ciao prolog and it's recommended to have one with some kind of instrumentation for detecting subtle bugs.
 
 As an example this is how to build Ciao with `clang` and AddressSanitizer on:
 
@@ -16,7 +16,7 @@ As an example this is how to build Ciao with `clang` and AddressSanitizer on:
 ./ciao-boot.sh build
 ```
 
-For the mutation of the samples the fuzzer uses `radamsa`. For instalation instruction of `radamsa` check it's [repo](https://gitlab.com/akihe/radamsa).
+For the mutation of the samples the fuzzer uses `radamsa`. For instalation instructions of `radamsa` check it's [repo](https://gitlab.com/akihe/radamsa).
 
 ## Usage
 
